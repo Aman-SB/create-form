@@ -1,0 +1,50 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.error {
+    color: rgb(156, 20, 20);
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    width: 35vw;
+    border: 2px solid ; /* Set the default border style */
+    border-radius: 5px;
+    height: 2rem;
+}
+
+input:focus{
+  outline: none; /* Remove the default focus outline */
+  border-color: transparent; /* Set the border color when focused */
+}
+
+
+input.invalid {
+    border-color: red; /* Set the border color for invalid input */
+}
+
+input.valid {
+    border-color: green; /* Set the border color for valid input */
+}
+
+.btn-continaer {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  background-color: blue;
+  border-radius: 10px;
+  color: white;
+  border-color: transparent;
+  width: 5rem;
+  height: 2rem;
+}
