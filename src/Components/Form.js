@@ -23,7 +23,7 @@ const Form = () => {
             // Update the isValidEmail state based on the result of the validation
             setIsValidEmail(emailRegex.test(enteredEmail));
         },
-        [email]
+        []
     );
 
     const checkPassword = useCallback(
@@ -33,7 +33,7 @@ const Form = () => {
 
             setIsValidPassword(enteredPassword.length >= 8 ? true : false);
         },
-        [password]
+        []
     );
 
     const checkConfirmPassword = useCallback(
@@ -44,7 +44,7 @@ const Form = () => {
             // Compare with the entered password
             setIsValidConfirmPassword(enteredConfirmPassword === password);
         },
-        [confirmPassword, password]
+        [password]
     );
 
     const handleSubmit = (e) => {
